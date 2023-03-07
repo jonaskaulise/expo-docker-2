@@ -1,0 +1,269 @@
+Specified value for "android.package" in app.json is ignored because an android directory was detected in the project.
+EAS Build will use the value found in the native code.
+✔ Using remote Android credentials (Expo server)
+✔ Using Keystore from configuration: Build Credentials Z8Q68RfzCg (default)
+ANDROID_NDK_HOME environment variable was not specified, continuing build without NDK
+[SETUP_WORKINGDIR] Preparing workingdir /tmp/root/eas-build-local-nodejs/cf2ecfed-7dd1-49f2-b839-8fe8d2e38a37
+[START_BUILD] Starting build
+  "job": {
+    "type": "generic",
+    "platform": "android",
+    "projectRootDirectory": ".",
+    "projectArchive": {
+      "type": "PATH",
+      "path": "/tmp/root/eas-cli-nodejs/cc6f80ce-a1bf-4e04-b85a-68c3a728f8b9.tar.gz"
+    },
+    "builderEnvironment": {},
+    "cache": {
+      "disabled": false,
+      "customPaths": [],
+      "cacheDefaultPaths": true,
+      "clear": false
+    },
+    "updates": {},
+    "username": "jkau",
+    "experimental": {},
+    "mode": "build",
+    "triggeredBy": "EAS_CLI"
+  }
+[READ_PACKAGE_JSON] Using package.json:
+[READ_PACKAGE_JSON] {
+  "name": "expo-docker-2",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "expo start --dev-client",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "expo": "~48.0.5",
+    "expo-splash-screen": "~0.18.1",
+    "expo-status-bar": "~1.4.4",
+    "hermes-engine": "^0.11.0",
+    "react": "18.2.0",
+    "react-native": "0.71.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0"
+  },
+  "private": true
+}
+[INSTALL_DEPENDENCIES] Running "npm install" in the root dir of your repository
+[INSTALL_DEPENDENCIES] npm
+[INSTALL_DEPENDENCIES] WARN deprecated @npmcli/move-file@1.1.2: This functionality has been moved to @npmcli/fs
+[INSTALL_DEPENDENCIES] npm
+[INSTALL_DEPENDENCIES] WARN deprecated source-map-url@0.4.1: See https://github.com/lydell/source-map-url#deprecated
+[INSTALL_DEPENDENCIES] npm
+[INSTALL_DEPENDENCIES] WARN deprecated urix@0.1.0: Please see https://github.com/lydell/urix#deprecated
+[INSTALL_DEPENDENCIES] npm WARN
+[INSTALL_DEPENDENCIES] deprecated resolve-url@0.2.1: https://github.com/lydell/resolve-url#deprecated
+[INSTALL_DEPENDENCIES] npm WARN deprecated source-map-resolve@0.5.3: See https://github.com/lydell/source-map-resolve#deprecated
+[INSTALL_DEPENDENCIES] npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+[INSTALL_DEPENDENCIES] npm WARN deprecated uglify-es@3.3.9: support for ECMAScript is superseded by `uglify-js` as of v3.13.0
+[INSTALL_DEPENDENCIES] added 1251 packages, and audited 1252 packages in 7s
+[INSTALL_DEPENDENCIES] 61 packages are looking for funding
+[INSTALL_DEPENDENCIES]   run `npm fund` for details
+[INSTALL_DEPENDENCIES] 5 high severity vulnerabilities
+[INSTALL_DEPENDENCIES]
+[INSTALL_DEPENDENCIES] To address all issues (including breaking changes), run:
+[INSTALL_DEPENDENCIES]   npm audit fix --force
+[INSTALL_DEPENDENCIES]
+[INSTALL_DEPENDENCIES] Run `npm audit` for details.
+[READ_APP_CONFIG] Using app configuration:
+[READ_APP_CONFIG] {
+  "name": "expo-docker-2",
+  "slug": "expo-docker-2",
+  "version": "1.0.0",
+  "orientation": "portrait",
+  "icon": "./assets/icon.png",
+  "userInterfaceStyle": "light",
+  "splash": {
+    "image": "./assets/splash.png",
+    "resizeMode": "contain",
+    "backgroundColor": "#ffffff"
+  },
+  "assetBundlePatterns": [
+    "**/*"
+  ],
+  "ios": {
+    "supportsTablet": true,
+    "bundleIdentifier": "com.jkau.expodocker2"
+  },
+  "android": {
+    "adaptiveIcon": {
+      "foregroundImage": "./assets/adaptive-icon.png",
+      "backgroundColor": "#ffffff"
+    },
+    "package": "com.jkau.expodocker2"
+  },
+  "web": {
+    "favicon": "./assets/favicon.png"
+  },
+  "extra": {
+    "eas": {
+      "projectId": "2211e8c5-180c-46a6-9eb6-0cbac13f77a5"
+    }
+  },
+  "owner": "jkau",
+  "sdkVersion": "48.0.0",
+  "platforms": [
+    "ios",
+    "android"
+  ],
+  "currentFullName": "@jkau/expo-docker-2",
+  "originalFullName": "@jkau/expo-docker-2"
+}
+[RUN_EXPO_DOCTOR] Running "expo doctor"
+[RUN_EXPO_DOCTOR] - Finding all copies of expo-modules-autolinking
+[RUN_EXPO_DOCTOR] - Finding all copies of @expo/config-plugins
+[RUN_EXPO_DOCTOR] - Finding all copies of @expo/prebuild-config
+[RUN_EXPO_DOCTOR] - Finding all copies of @unimodules/core
+[RUN_EXPO_DOCTOR] - Finding all copies of @unimodules/react-native-adapter
+[RUN_EXPO_DOCTOR] - Finding all copies of react-native-unimodules
+[RUN_EXPO_DOCTOR] [17:55:58] 🎉 Didn't find any issues with the project!
+[PREBUILD] Skipped running "expo prebuild" because the "android" directory already exists. Learn more about the build process: https://docs.expo.dev/build-reference/android-builds/
+[PREPARE_CREDENTIALS] Writing secrets to the project's directory
+[PREPARE_CREDENTIALS] Injecting signing config into build.gradle
+[RUN_GRADLEW] Running 'gradlew :app:bundleRelease' in /tmp/root/eas-build-local-nodejs/cf2ecfed-7dd1-49f2-b839-8fe8d2e38a37/build/android
+[RUN_GRADLEW] > Task :react-native-gradle-plugin:compileKotlin
+[RUN_GRADLEW] > Task :react-native-gradle-plugin:compileJava NO-SOURCE
+[RUN_GRADLEW] > Task :react-native-gradle-plugin:pluginDescriptors
+[RUN_GRADLEW] > Task :react-native-gradle-plugin:processResources
+[RUN_GRADLEW] > Task :react-native-gradle-plugin:classes
+[RUN_GRADLEW] > Task :react-native-gradle-plugin:inspectClassesForKotlinIC
+[RUN_GRADLEW] > Task :react-native-gradle-plugin:jar
+[RUN_GRADLEW] > Configure project :expo-application
+[RUN_GRADLEW] WARNING:Software Components will not be created automatically for Maven publishing from Android Gradle Plugin 8.0. To opt-in to the future behavior, set the Gradle property android.disableAutomaticComponentCreation=true in the `gradle.properties` file or use the new publishing DSL.
+[RUN_GRADLEW] > Configure project :expo-constants
+[RUN_GRADLEW] WARNING:Software Components will not be created automatically for Maven publishing from Android Gradle Plugin 8.0. To opt-in to the future behavior, set the Gradle property android.disableAutomaticComponentCreation=true in the `gradle.properties` file or use the new publishing DSL.
+[RUN_GRADLEW] > Configure project :expo-file-system
+[RUN_GRADLEW] WARNING:Software Components will not be created automatically for Maven publishing from Android Gradle Plugin 8.0. To opt-in to the future behavior, set the Gradle property android.disableAutomaticComponentCreation=true in the `gradle.properties` file or use the new publishing DSL.
+[RUN_GRADLEW] > Configure project :expo-font
+[RUN_GRADLEW] WARNING:Software Components will not be created automatically for Maven publishing from Android Gradle Plugin 8.0. To opt-in to the future behavior, set the Gradle property android.disableAutomaticComponentCreation=true in the `gradle.properties` file or use the new publishing DSL.
+[RUN_GRADLEW] > Configure project :expo-keep-awake
+[RUN_GRADLEW] WARNING:Software Components will not be created automatically for Maven publishing from Android Gradle Plugin 8.0. To opt-in to the future behavior, set the Gradle property android.disableAutomaticComponentCreation=true in the `gradle.properties` file or use the new publishing DSL.
+[RUN_GRADLEW] > Configure project :expo-modules-core
+[RUN_GRADLEW] WARNING:Software Components will not be created automatically for Maven publishing from Android Gradle Plugin 8.0. To opt-in to the future behavior, set the Gradle property android.disableAutomaticComponentCreation=true in the `gradle.properties` file or use the new publishing DSL.
+[RUN_GRADLEW] > Configure project :expo-splash-screen
+[RUN_GRADLEW] WARNING:Software Components will not be created automatically for Maven publishing from Android Gradle Plugin 8.0. To opt-in to the future behavior, set the Gradle property android.disableAutomaticComponentCreation=true in the `gradle.properties` file or use the new publishing DSL.
+[RUN_GRADLEW] > Configure project :expo
+[RUN_GRADLEW] Using expo modules
+[RUN_GRADLEW]   - expo-application (5.1.1)
+[RUN_GRADLEW]   - expo-constants (14.2.1)
+[RUN_GRADLEW]   - expo-file-system (15.2.2)
+[RUN_GRADLEW]   - expo-font (11.1.1)
+[RUN_GRADLEW]   - expo-keep-awake (12.0.1)
+[RUN_GRADLEW]   - expo-modules-core (1.2.4)
+[RUN_GRADLEW]   - expo-splash-screen (0.18.1)
+[RUN_GRADLEW] WARNING:Software Components will not be created automatically for Maven publishing from Android Gradle Plugin 8.0. To opt-in to the future behavior, set the Gradle property android.disableAutomaticComponentCreation=true in the `gradle.properties` file or use the new publishing DSL.
+[RUN_GRADLEW] The Kotlin Gradle plugin was loaded multiple times in different subprojects, which is not supported and may break the build.
+[RUN_GRADLEW] This might happen in subprojects that apply the Kotlin plugins with the Gradle 'plugins { ... }' DSL if they specify explicit versions, even if the versions are equal.
+[RUN_GRADLEW] Please add the Kotlin plugin to the common parent project or the root project, then remove the versions in the subprojects.
+[RUN_GRADLEW] If the parent project does not need the plugin, add 'apply false' to the plugin line.
+[RUN_GRADLEW] See: https://docs.gradle.org/current/userguide/plugins.html#sec:subprojects_plugins_dsl
+[RUN_GRADLEW] The Kotlin plugin was loaded in the following projects: ':expo', ':expo-modules-core'
+[RUN_GRADLEW] > Task :app:buildCodegenCLI SKIPPED
+[RUN_GRADLEW] > Task :app:generateCodegenSchemaFromJavaScript SKIPPED
+[RUN_GRADLEW] > Task :app:generateCodegenArtifactsFromSchema SKIPPED
+[RUN_GRADLEW] > Task :app:generatePackageList
+[RUN_GRADLEW] > Task :app:preBuild
+[RUN_GRADLEW] > Task :app:preReleaseBuild
+[RUN_GRADLEW] > Task :expo:generateExpoModulesPackageList
+[RUN_GRADLEW] > Task :expo:preBuild
+[RUN_GRADLEW] > Task :expo:preReleaseBuild
+[RUN_GRADLEW] > Task :expo:packageReleaseRenderscript NO-SOURCE
+[RUN_GRADLEW] > Task :expo-application:preBuild UP-TO-DATE
+[RUN_GRADLEW] > Task :expo-application:preReleaseBuild UP-TO-DATE
+[RUN_GRADLEW] > Task :expo-application:packageReleaseRenderscript NO-SOURCE
+[RUN_GRADLEW] > Task :expo-constants:preBuild UP-TO-DATE
+[RUN_GRADLEW] > Task :expo-constants:preReleaseBuild UP-TO-DATE
+[RUN_GRADLEW] > Task :expo-constants:packageReleaseRenderscript NO-SOURCE
+[RUN_GRADLEW] > Task :expo-file-system:preBuild UP-TO-DATE
+[RUN_GRADLEW] > Task :expo-file-system:preReleaseBuild UP-TO-DATE
+[RUN_GRADLEW] > Task :expo-file-system:packageReleaseRenderscript NO-SOURCE
+[RUN_GRADLEW] > Task :expo-font:preBuild UP-TO-DATE
+[RUN_GRADLEW] > Task :expo-font:preReleaseBuild UP-TO-DATE
+[RUN_GRADLEW] > Task :expo-font:packageReleaseRenderscript NO-SOURCE
+[RUN_GRADLEW] > Task :expo-keep-awake:preBuild UP-TO-DATE
+[RUN_GRADLEW] > Task :expo-keep-awake:preReleaseBuild UP-TO-DATE
+[RUN_GRADLEW] > Task :expo-keep-awake:packageReleaseRenderscript NO-SOURCE
+[RUN_GRADLEW] > Task :expo-modules-core:preBuild UP-TO-DATE
+[RUN_GRADLEW] > Task :expo-modules-core:preReleaseBuild UP-TO-DATE
+[RUN_GRADLEW] > Task :expo-modules-core:packageReleaseRenderscript NO-SOURCE
+[RUN_GRADLEW] > Task :expo-splash-screen:preBuild UP-TO-DATE
+[RUN_GRADLEW] > Task :expo-splash-screen:preReleaseBuild UP-TO-DATE
+[RUN_GRADLEW] > Task :expo-splash-screen:packageReleaseRenderscript NO-SOURCE
+[RUN_GRADLEW] > Task :app:compileReleaseRenderscript
+[RUN_GRADLEW] NO-SOURCE
+[RUN_GRADLEW] > Task :app:generateReleaseResValues
+[RUN_GRADLEW] > Task :expo:compileReleaseRenderscript NO-SOURCE
+[RUN_GRADLEW] > Task :expo:generateReleaseResValues
+[RUN_GRADLEW] > Task :expo:generateReleaseResources
+[RUN_GRADLEW] > Task :expo:packageReleaseResources
+[RUN_GRADLEW] > Task :expo-application:compileReleaseRenderscript NO-SOURCE
+[RUN_GRADLEW] > Task :expo-application:generateReleaseResValues
+[RUN_GRADLEW] > Task :expo-application:generateReleaseResources
+[RUN_GRADLEW] > Task :expo-application:packageReleaseResources
+[RUN_GRADLEW] > Task :expo-constants:compileReleaseRenderscript NO-SOURCE
+[RUN_GRADLEW] > Task :expo-constants:generateReleaseResValues
+[RUN_GRADLEW] > Task :expo-constants:generateReleaseResources
+[RUN_GRADLEW] > Task :expo-constants:packageReleaseResources
+[RUN_GRADLEW] > Task :expo-file-system:compileReleaseRenderscript NO-SOURCE
+[RUN_GRADLEW] > Task :expo-file-system:generateReleaseResValues
+[RUN_GRADLEW] > Task :expo-file-system:generateReleaseResources
+[RUN_GRADLEW] > Task :expo-file-system:packageReleaseResources
+[RUN_GRADLEW] > Task :expo-font:compileReleaseRenderscript NO-SOURCE
+[RUN_GRADLEW] > Task :expo-font:generateReleaseResValues
+[RUN_GRADLEW] > Task :expo-font:generateReleaseResources
+[RUN_GRADLEW] > Task :expo-font:packageReleaseResources
+[RUN_GRADLEW] > Task :expo-keep-awake:compileReleaseRenderscript NO-SOURCE
+[RUN_GRADLEW] > Task :expo-keep-awake:generateReleaseResValues
+[RUN_GRADLEW] > Task :expo-keep-awake:generateReleaseResources
+[RUN_GRADLEW] > Task :expo-keep-awake:packageReleaseResources
+[RUN_GRADLEW] > Task :expo-modules-core:compileReleaseRenderscript NO-SOURCE
+[RUN_GRADLEW] > Task :expo-modules-core:generateReleaseResValues
+[RUN_GRADLEW] > Task :expo-modules-core:generateReleaseResources
+[RUN_GRADLEW] > Task :expo-modules-core:packageReleaseResources
+[RUN_GRADLEW] > Task :expo-splash-screen:compileReleaseRenderscript NO-SOURCE
+[RUN_GRADLEW] > Task :expo-splash-screen:generateReleaseResValues
+[RUN_GRADLEW] > Task :expo-splash-screen:generateReleaseResources
+[RUN_GRADLEW] > Task :expo-splash-screen:packageReleaseResources
+[RUN_GRADLEW] > Task :app:mapReleaseSourceSetPaths
+[RUN_GRADLEW] > Task :app:createBundleReleaseJsAndAssets
+[RUN_GRADLEW] warning: the transform cache was reset.
+[RUN_GRADLEW]                 Welcome to Metro v0.73.8
+[RUN_GRADLEW]               Fast - Scalable - Integrated
+[RUN_GRADLEW] info Writing bundle output to:, /tmp/root/eas-build-local-nodejs/cf2ecfed-7dd1-49f2-b839-8fe8d2e38a37/build/android/app/build/generated/assets/createBundleReleaseJsAndAssets/index.android.bundle
+[RUN_GRADLEW] info Writing sourcemap output to:, /tmp/root/eas-build-local-nodejs/cf2ecfed-7dd1-49f2-b839-8fe8d2e38a37/build/android/app/build/intermediates/sourcemaps/react/release/index.android.bundle.packager.map
+[RUN_GRADLEW] info Done writing bundle output
+[RUN_GRADLEW] info Done writing sourcemap output
+[RUN_GRADLEW] > Task :app:createBundleReleaseJsAndAssets FAILED
+[RUN_GRADLEW] FAILURE: Build completed with 2 failures.
+[RUN_GRADLEW] 1: Task failed with an exception.
+[RUN_GRADLEW] -----------
+[RUN_GRADLEW] * What went wrong:
+[RUN_GRADLEW] Execution failed for task ':app:createBundleReleaseJsAndAssets'.
+[RUN_GRADLEW] > OS not recognized. Please set project.react.hermesCommand to the path of a working Hermes compiler.
+[RUN_GRADLEW] * Try:
+[RUN_GRADLEW] > Run with --stacktrace option to get the stack trace.
+[RUN_GRADLEW] > Run with --info or --debug option to get more log output.
+[RUN_GRADLEW] > Run with --scan to get full insights.
+[RUN_GRADLEW] ==============================================================================
+[RUN_GRADLEW] 2: Task failed with an exception.
+[RUN_GRADLEW] -----------
+[RUN_GRADLEW] * What went wrong:
+[RUN_GRADLEW] java.lang.StackOverflowError (no error message)
+[RUN_GRADLEW] * Try:
+[RUN_GRADLEW] > Run with --stacktrace option to get the stack trace.
+[RUN_GRADLEW] > Run with --info or --debug option to get more log output.
+[RUN_GRADLEW] > Run with --scan to get full insights.
+[RUN_GRADLEW] ==============================================================================
+[RUN_GRADLEW] * Get more help at https://help.gradle.org
+[RUN_GRADLEW] BUILD FAILED in 21s
+[RUN_GRADLEW] 26 actionable tasks: 26 executed
+[RUN_GRADLEW] Error: Gradle build failed with unknown error. See logs for the "Run gradlew" phase for more information.
+
+Build failed
+Gradle build failed with unknown error. See logs for the "Run gradlew" phase for more information.
+    Error: npx exited with non-zero code: 1

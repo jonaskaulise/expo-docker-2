@@ -1,0 +1,11 @@
+ubuntu:jammy-20220531:
+    -> node.js 16
+    -> jdk 8 und 11
+    -> ndk 21 und 24 vorinstalliert (sowohl über sdkmanager als auch über wget)
+    -> sdkmanager installiert oder nicht installiert
+    -> android-sdk installiert oder nicht installiert
+
+    -> wenn nur android-sdk und kein sdkmanager -> lizenzen können nicht akzeptiert werden
+    -> wenn nur sdkmanager und kein android-sdk -> build-tools können nicht installiert werden
+    -> wenn ndk vorinstalliert -> ndk nicht configured-Fehler
+    -> wenn ndk nicht vorinstalliert -> sdkmanager installiert automatisch ndk 23, aber hermesCommand-Path fehler.
